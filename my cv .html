@@ -1,0 +1,1142 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>عبد الرحمن بني عيسى | السيرة الذاتية</title>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js"></script>
+<style>
+.avatar img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  border-radius:50%;
+}
+:root{
+  --navy:#0a1a3f;
+  --blue:#1d4ed8;
+  --blue-2:#3b82f6;
+  --sky:#0ea5e9;
+  --aqua:#22d3ee;
+  --gold:#facc15;
+  --gold-2:#f59e0b;
+  --bg:#f0f6ff;
+  --bg-2:#e0f2fe;
+  --card:#ffffff;
+  --text:#0a1a3f;
+  --text-muted:#5a6b8c;
+  --border:#dbeafe;
+  --grad:linear-gradient(135deg,#0a1a3f 0%,#1d4ed8 50%,#0ea5e9 100%);
+  --grad-2:linear-gradient(135deg,#0ea5e9 0%,#22d3ee 100%);
+  --grad-3:linear-gradient(135deg,#facc15 0%,#f59e0b 100%);
+  --grad-blue:linear-gradient(135deg,#1d4ed8 0%,#3b82f6 100%);
+  --shadow:0 12px 32px rgba(10,26,63,.10);
+  --shadow-lg:0 24px 60px rgba(10,26,63,.18);
+  --shadow-glow:0 0 40px rgba(14,165,233,.35);
+  --radius:22px;
+  --radius-sm:14px;
+  --transition:.35s cubic-bezier(.34,1.56,.64,1);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  font-family:'Cairo','Poppins',sans-serif;
+  background:var(--bg);color:var(--text);
+  line-height:1.7;overflow-x:hidden;position:relative;
+}
+body::before{
+  content:'';position:fixed;inset:0;z-index:0;pointer-events:none;
+  background:
+    radial-gradient(circle at 15% 10%,rgba(14,165,233,.15),transparent 45%),
+    radial-gradient(circle at 85% 30%,rgba(29,78,216,.12),transparent 45%),
+    radial-gradient(circle at 50% 95%,rgba(250,204,21,.12),transparent 45%);
+  animation:bgFloat 20s ease-in-out infinite;
+}
+@keyframes bgFloat{
+  0%,100%{transform:scale(1) translate(0,0)}
+  50%{transform:scale(1.05) translate(-10px,-10px)}
+}
+body>*{position:relative;z-index:1}
+body[dir="ltr"]{font-family:'Poppins','Cairo',sans-serif}
+.container{max-width:1180px;margin:0 auto;padding:0 22px}
+
+.progress-bar{
+  position:fixed;top:0;left:0;height:4px;width:0;
+  background:var(--grad);z-index:1001;
+  transition:width .15s ease;border-radius:0 0 4px 0;
+  box-shadow:0 0 12px rgba(14,165,233,.6);
+}
+
+.navbar{
+  position:fixed;top:4px;left:0;right:0;
+  background:rgba(255,255,255,.82);
+  backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);
+  border-bottom:1px solid var(--border);z-index:1000;
+  transition:all .35s ease;
+}
+.navbar.scrolled{background:rgba(255,255,255,.95);box-shadow:0 8px 30px rgba(10,26,63,.10)}
+.nav-container{max-width:1180px;margin:0 auto;padding:14px 22px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.logo{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--text);font-weight:800}
+.logo-mark{
+  width:46px;height:46px;border-radius:14px;
+  background:var(--grad);color:#fff;
+  display:grid;place-items:center;font-size:22px;font-weight:900;
+  box-shadow:0 10px 24px rgba(29,78,216,.40);
+  position:relative;overflow:hidden;
+  transition:transform .4s cubic-bezier(.34,1.56,.64,1);
+}
+.logo-mark::before{
+  content:'';position:absolute;inset:0;
+  background:linear-gradient(120deg,transparent 30%,rgba(255,255,255,.6) 50%,transparent 70%);
+  transform:translateX(-100%);
+  animation:shine 3s infinite;
+}
+@keyframes shine{to{transform:translateX(100%)}}
+.logo:hover .logo-mark{transform:rotate(-8deg) scale(1.08)}
+.logo-text{
+  font-size:16px;white-space:nowrap;font-weight:800;
+  background:var(--grad);-webkit-background-clip:text;background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+.nav-links{display:flex;gap:6px;align-items:center}
+.nav-links a{
+  text-decoration:none;color:var(--text-muted);font-weight:700;font-size:14px;
+  transition:var(--transition);position:relative;
+  padding:8px 14px;border-radius:50px;
+}
+.nav-links a::before{
+  content:'';position:absolute;inset:0;border-radius:50px;
+  background:var(--grad-blue);opacity:0;transform:scale(.7);
+  transition:all .3s ease;z-index:-1;
+}
+.nav-links a:hover{color:#fff;transform:translateY(-2px)}
+.nav-links a:hover::before{opacity:1;transform:scale(1)}
+.nav-actions{display:flex;align-items:center;gap:10px}
+.lang-btn{
+  display:flex;align-items:center;gap:8px;
+  padding:10px 20px;border:none;
+  background:var(--grad);color:#fff;border-radius:50px;
+  cursor:pointer;font-family:inherit;font-weight:800;font-size:14px;
+  transition:var(--transition);
+  box-shadow:0 10px 24px rgba(29,78,216,.35);
+  position:relative;overflow:hidden;
+}
+.lang-btn::before{
+  content:'';position:absolute;inset:0;
+  background:linear-gradient(120deg,transparent 30%,rgba(255,255,255,.5) 50%,transparent 70%);
+  transform:translateX(-100%);transition:transform .6s ease;
+}
+.lang-btn:hover::before{transform:translateX(100%)}
+.lang-btn:hover{transform:translateY(-3px) scale(1.04);box-shadow:0 16px 34px rgba(14,165,233,.50)}
+.lang-icon{font-size:16px;animation:spinSlow 8s linear infinite}
+@keyframes spinSlow{to{transform:rotate(360deg)}}
+.menu-btn{display:none;background:none;border:none;font-size:26px;cursor:pointer;color:var(--blue)}
+
+.hero{position:relative;padding:160px 22px 100px;overflow:hidden}
+.hero-shapes{position:absolute;inset:0;pointer-events:none;overflow:hidden}
+.shape{position:absolute;border-radius:50%;filter:blur(60px);opacity:.55}
+.shape.s1{width:380px;height:380px;background:radial-gradient(circle,#0ea5e9,transparent 70%);top:-80px;right:-80px;animation:float1 14s ease-in-out infinite}
+.shape.s2{width:320px;height:320px;background:radial-gradient(circle,#1d4ed8,transparent 70%);bottom:-60px;left:-60px;animation:float2 16s ease-in-out infinite}
+.shape.s3{width:260px;height:260px;background:radial-gradient(circle,#facc15,transparent 70%);top:40%;left:45%;animation:float3 18s ease-in-out infinite}
+@keyframes float1{50%{transform:translate(-30px,40px) scale(1.1)}}
+@keyframes float2{50%{transform:translate(40px,-30px) scale(1.1)}}
+@keyframes float3{50%{transform:translate(-20px,30px) scale(.9)}}
+.hero-content{
+  max-width:1180px;margin:0 auto;
+  display:grid;grid-template-columns:1.3fr 1fr;gap:50px;align-items:center;
+  position:relative;
+}
+.hero-greet{
+  color:#fff;font-weight:800;font-size:15px;margin-bottom:16px;
+  display:inline-flex;align-items:center;gap:10px;
+  padding:10px 22px;background:var(--grad-blue);
+  border-radius:50px;box-shadow:0 12px 28px rgba(29,78,216,.35);
+  animation:slideDown .8s ease both;
+}
+.hero-greet::before{content:'✨';font-size:16px;animation:twinkle 2s infinite}
+@keyframes twinkle{50%{opacity:.4;transform:scale(.85)}}
+@keyframes slideDown{from{opacity:0;transform:translateY(-20px)}to{opacity:1;transform:translateY(0)}}
+.hero-name{
+  font-size:clamp(30px,4.2vw,52px);font-weight:900;line-height:1.15;
+  background:var(--grad);-webkit-background-clip:text;background-clip:text;
+  -webkit-text-fill-color:transparent;margin-bottom:16px;
+  animation:slideUp .9s ease both .15s;
+}
+@keyframes slideUp{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
+.hero-title{
+  font-size:clamp(16px,2vw,22px);font-weight:700;color:var(--blue-2);
+  margin-bottom:18px;animation:slideUp .9s ease both .3s;
+}
+.hero-desc{color:var(--text-muted);font-size:16px;margin-bottom:32px;max-width:560px;animation:slideUp .9s ease both .45s}
+.hero-buttons{display:flex;gap:16px;flex-wrap:wrap;margin-bottom:40px;animation:slideUp .9s ease both .6s}
+.btn{
+  padding:15px 32px;border-radius:50px;text-decoration:none;
+  font-weight:800;font-size:15px;transition:var(--transition);
+  display:inline-flex;align-items:center;gap:10px;
+  border:2px solid transparent;cursor:pointer;font-family:inherit;
+  position:relative;overflow:hidden;
+}
+.btn-primary{background:var(--grad);color:#fff;box-shadow:0 14px 32px rgba(29,78,216,.40)}
+.btn-primary::after{
+  content:'→';transition:transform .35s ease;display:inline-block;
+}
+body[dir="ltr"] .btn-primary::after{content:'→'}
+body[dir="rtl"] .btn-primary::after{content:'←'}
+.btn-primary:hover{transform:translateY(-4px) scale(1.04);box-shadow:0 20px 44px rgba(14,165,233,.55)}
+.btn-primary:hover::after{transform:translateX(-6px)}
+body[dir="ltr"] .btn-primary:hover::after{transform:translateX(6px)}
+.btn-outline{border-color:var(--blue);color:var(--blue);background:#fff}
+.btn-outline:hover{background:var(--blue);color:#fff;transform:translateY(-4px);box-shadow:0 16px 36px rgba(29,78,216,.35)}
+.hero-stats{display:flex;gap:14px;flex-wrap:wrap;animation:slideUp .9s ease both .75s}
+.stat{
+  display:flex;flex-direction:column;align-items:center;
+  background:#fff;padding:14px 22px;border-radius:var(--radius-sm);
+  box-shadow:var(--shadow);border:1px solid var(--border);
+  transition:var(--transition);cursor:default;min-width:100px;
+}
+.stat:hover{transform:translateY(-6px) scale(1.05);box-shadow:var(--shadow-lg);border-color:var(--sky)}
+.stat-num{font-size:26px;font-weight:900;background:var(--grad-2);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.stat-label{font-size:13px;color:var(--text-muted);font-weight:700}
+
+.hero-card{
+  background:var(--card);border-radius:var(--radius);
+  padding:36px 28px;box-shadow:var(--shadow-lg);
+  border:1px solid var(--border);text-align:center;
+  position:relative;overflow:hidden;
+  animation:cardIn 1s ease both .4s;
+}
+@keyframes cardIn{from{opacity:0;transform:translateY(40px) scale(.95)}to{opacity:1;transform:translateY(0) scale(1)}}
+.hero-card::before{
+  content:'';position:absolute;top:0;left:0;right:0;height:6px;background:var(--grad);
+}
+.hero-card::after{
+  content:'';position:absolute;bottom:-50px;left:-50px;
+  width:150px;height:150px;border-radius:50%;
+  background:radial-gradient(circle,rgba(250,204,21,.25),transparent 70%);
+  animation:pulse 4s ease-in-out infinite;
+}
+@keyframes pulse{50%{transform:scale(1.2);opacity:.6}}
+.avatar{
+  width:130px;height:130px;border-radius:50%;margin:0 auto 18px;
+  background:var(--grad);color:#fff;
+  display:grid;place-items:center;font-size:46px;font-weight:900;
+  box-shadow:0 18px 40px rgba(29,78,216,.45);
+  border:5px solid #fff;position:relative;
+  transition:transform .4s cubic-bezier(.34,1.56,.64,1);
+  overflow:hidden;
+}
+.avatar::before{
+  content:'';position:absolute;inset:-5px;border-radius:50%;
+  background:conic-gradient(from 0deg,#0ea5e9,#1d4ed8,#facc15,#0ea5e9);
+  z-index:-1;animation:rotate 6s linear infinite;
+}
+@keyframes rotate{to{transform:rotate(360deg)}}
+.avatar:hover{transform:scale(1.08) rotate(-5deg)}
+.avatar img{
+  width:100% !important;
+  height:100% !important;
+  object-fit:cover;
+  border-radius:50%;
+  display:block;
+}
+.hero-card h3{font-size:20px;font-weight:800;margin-bottom:4px}
+.hero-card>p{color:var(--text-muted);font-size:14px;margin-bottom:22px}
+.quick-info{list-style:none;text-align:start}
+.quick-info li{
+  display:flex;justify-content:space-between;align-items:center;
+  padding:12px 0;border-bottom:1px dashed var(--border);font-size:14px;
+  transition:var(--transition);
+}
+.quick-info li:hover{padding-inline-start:8px;color:var(--blue)}
+.quick-info li:last-child{border-bottom:none}
+.qi-label{color:var(--text-muted);font-weight:700}
+.qi-value{font-weight:800;color:var(--blue)}
+
+.section{padding:100px 0;position:relative}
+.section-alt{background:linear-gradient(135deg,#f0f9ff 0%,#e0f2fe 50%,#f0f6ff 100%)}
+.section-title{
+  font-size:clamp(26px,3.2vw,38px);font-weight:900;margin-bottom:16px;
+  text-align:center;position:relative;padding-bottom:20px;
+  display:inline-block;width:100%;
+  background:var(--grad);-webkit-background-clip:text;background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+.section-title::after{
+  content:'';position:absolute;bottom:0;left:50%;transform:translateX(-50%);
+  width:90px;height:5px;border-radius:5px;background:var(--grad);
+  box-shadow:0 0 20px rgba(14,165,233,.55);
+  animation:expand 1.2s ease;
+}
+@keyframes expand{from{width:0}to{width:90px}}
+.section-note{text-align:center;color:var(--text-muted);margin-bottom:40px;max-width:700px;margin-inline:auto;font-size:15px}
+
+.about-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:24px;margin-top:40px}
+.about-card{
+  background:var(--card);border-radius:var(--radius);padding:32px 28px;
+  border:1px solid var(--border);box-shadow:var(--shadow);
+  transition:var(--transition);position:relative;overflow:hidden;
+  cursor:default;
+}
+.about-card::before{
+  content:'';position:absolute;top:0;right:0;width:100px;height:100px;
+  background:radial-gradient(circle,rgba(250,204,21,.20),transparent 70%);
+  border-radius:50%;transform:translate(30%,-30%);
+  transition:transform .5s ease;
+}
+.about-card:hover::before{transform:translate(20%,-20%) scale(1.4)}
+.about-card:nth-child(1){border-top:5px solid var(--blue)}
+.about-card:nth-child(2){border-top:5px solid var(--sky)}
+.about-card:nth-child(3){border-top:5px solid var(--gold-2)}
+.about-card:hover{transform:translateY(-10px) rotate(-1deg);box-shadow:var(--shadow-lg)}
+.about-icon{
+  font-size:46px;margin-bottom:16px;display:inline-block;
+  transition:transform .5s cubic-bezier(.34,1.56,.64,1);
+}
+.about-card:hover .about-icon{transform:scale(1.2) rotate(-10deg)}
+.about-card h3{font-size:19px;font-weight:800;margin-bottom:12px}
+.about-card:nth-child(1) h3{color:var(--blue)}
+.about-card:nth-child(2) h3{color:var(--sky)}
+.about-card:nth-child(3) h3{color:#b45309}
+.about-card p{color:var(--text-muted);font-size:15px}
+
+.edu-card{
+  background:var(--card);border-radius:var(--radius);padding:38px;
+  border:1px solid var(--border);box-shadow:var(--shadow-lg);
+  display:flex;gap:28px;align-items:flex-start;
+  margin-top:40px;max-width:880px;margin-inline:auto;
+  position:relative;overflow:hidden;
+  transition:var(--transition);
+}
+.edu-card:hover{transform:translateY(-8px);box-shadow:0 30px 70px rgba(10,26,63,.22)}
+.edu-card::before{
+  content:'';position:absolute;top:0;left:0;width:6px;height:100%;
+  background:var(--grad);
+}
+.edu-icon{
+  flex-shrink:0;width:84px;height:84px;border-radius:22px;
+  background:var(--grad);color:#fff;
+  display:grid;place-items:center;font-size:38px;
+  box-shadow:0 14px 32px rgba(29,78,216,.40);
+  transition:transform .5s cubic-bezier(.34,1.56,.64,1);
+}
+.edu-card:hover .edu-icon{transform:rotate(-10deg) scale(1.08)}
+.edu-info h3{font-size:21px;font-weight:800;margin-bottom:10px}
+.edu-major{color:var(--text-muted);font-size:15px;margin-bottom:16px}
+.edu-badges{display:flex;gap:10px;flex-wrap:wrap}
+.badge{
+  padding:8px 20px;border-radius:50px;font-size:13px;font-weight:800;
+  background:var(--grad-2);color:#fff;
+  box-shadow:0 8px 20px rgba(14,165,233,.35);
+  transition:var(--transition);
+}
+.badge:hover{transform:translateY(-3px) scale(1.05)}
+.badge-current{background:var(--grad-3);box-shadow:0 8px 20px rgba(245,158,11,.35)}
+
+.skills-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px;margin-top:40px}
+.skill-box{
+  background:var(--card);border-radius:var(--radius);padding:32px 28px;
+  border:1px solid var(--border);box-shadow:var(--shadow);
+  transition:var(--transition);position:relative;overflow:hidden;
+}
+.skill-box::after{
+  content:'';position:absolute;bottom:0;left:0;right:0;height:0;
+  background:var(--grad);transition:height .4s ease;z-index:0;
+}
+.skill-box:hover::after{height:6px}
+.skill-box:nth-child(1){border-top:5px solid var(--blue)}
+.skill-box:nth-child(2){border-top:5px solid var(--sky)}
+.skill-box:nth-child(3){border-top:5px solid var(--gold-2)}
+.skill-box:hover{transform:translateY(-10px);box-shadow:var(--shadow-lg)}
+.skill-box h3{
+  font-size:19px;font-weight:800;margin-bottom:20px;
+  padding-bottom:14px;border-bottom:2px dashed var(--border);
+}
+.skill-box:nth-child(1) h3{color:var(--blue)}
+.skill-box:nth-child(2) h3{color:var(--sky)}
+.skill-box:nth-child(3) h3{color:#b45309}
+.skill-list{list-style:none}
+.skill-list li{
+  padding:11px 0;color:var(--text-muted);font-size:15px;
+  display:flex;align-items:center;gap:12px;
+  transition:var(--transition);cursor:default;
+}
+.skill-list li:hover{color:var(--blue);padding-inline-start:8px}
+.skill-list li::before{
+  content:'✦';font-size:15px;flex-shrink:0;color:var(--sky);
+  transition:transform .3s ease;
+}
+.skill-list li:hover::before{transform:rotate(180deg) scale(1.2)}
+
+.projects-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(330px,1fr));gap:28px;margin-top:40px}
+.project-card{
+  background:var(--card);border-radius:var(--radius);padding:36px 30px;
+  border:1px solid var(--border);box-shadow:var(--shadow);
+  transition:var(--transition);position:relative;overflow:hidden;
+  display:flex;flex-direction:column;
+}
+.project-card::before{
+  content:'';position:absolute;top:0;right:0;width:140px;height:140px;
+  background:radial-gradient(circle,rgba(14,165,233,.15),transparent 70%);
+  transition:transform .6s ease;
+}
+.project-card:hover::before{transform:scale(1.5) translate(-20%,20%)}
+.project-card::after{
+  content:'';position:absolute;top:0;left:0;right:0;height:6px;background:var(--grad);
+}
+.project-card:hover{transform:translateY(-12px);box-shadow:0 30px 70px rgba(10,26,63,.22)}
+.project-icon{
+  font-size:50px;margin-bottom:16px;display:inline-block;
+  transition:transform .5s cubic-bezier(.34,1.56,.64,1);
+}
+.project-card:hover .project-icon{transform:scale(1.2) rotate(-10deg)}
+.project-tag{
+  display:inline-block;padding:7px 18px;border-radius:50px;
+  background:var(--grad-2);color:#fff;font-size:12px;font-weight:800;
+  margin-bottom:16px;align-self:flex-start;
+  box-shadow:0 8px 18px rgba(14,165,233,.30);
+}
+.project-card h3{font-size:20px;font-weight:800;margin-bottom:12px;color:var(--navy)}
+.project-card>p{color:var(--text-muted);font-size:15px;margin-bottom:18px}
+.project-meta{
+  background:linear-gradient(135deg,#f0f9ff,#e0f2fe);
+  border-radius:var(--radius-sm);padding:16px 20px;margin-bottom:18px;
+  border:1px solid var(--border);
+}
+.project-meta h4{font-size:14px;font-weight:800;color:var(--blue);margin-bottom:8px}
+.project-meta p{font-size:14px;color:var(--text-muted)}
+.tech-tags{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:24px}
+.tech-tags span{
+  padding:6px 14px;border-radius:10px;font-size:12px;font-weight:800;
+  background:rgba(29,78,216,.10);color:var(--blue);
+  border:1px solid rgba(29,78,216,.20);
+  transition:var(--transition);cursor:default;
+}
+.tech-tags span:hover{background:var(--blue);color:#fff;transform:translateY(-3px)}
+.project-actions{margin-top:auto;display:flex;gap:10px;flex-wrap:wrap}
+.download-btn{
+  display:inline-flex;align-items:center;gap:10px;
+  padding:13px 26px;border-radius:50px;font-weight:800;font-size:14px;
+  transition:var(--transition);
+  background:var(--grad);color:#fff;border:none;cursor:pointer;font-family:inherit;
+  box-shadow:0 12px 28px rgba(29,78,216,.40);
+  position:relative;overflow:hidden;
+}
+.download-btn::before{
+  content:'';position:absolute;inset:0;
+  background:linear-gradient(120deg,transparent 30%,rgba(255,255,255,.5) 50%,transparent 70%);
+  transform:translateX(-100%);transition:transform .6s ease;
+}
+.download-btn:hover::before{transform:translateX(100%)}
+.download-btn:hover{transform:translateY(-4px) scale(1.04);box-shadow:0 20px 44px rgba(14,165,233,.55)}
+.download-btn .dl-icon{
+  font-size:18px;transition:transform .4s ease;
+}
+.download-btn:hover .dl-icon{transform:translateY(4px) scale(1.2)}
+
+.timeline{position:relative;margin-top:40px;padding-inline-start:40px}
+.timeline::before{
+  content:'';position:absolute;top:0;bottom:0;right:12px;width:4px;
+  background:var(--grad);border-radius:4px;
+  box-shadow:0 0 20px rgba(14,165,233,.4);
+}
+body[dir="ltr"] .timeline::before{right:auto;left:12px}
+.timeline-item{position:relative;margin-bottom:32px}
+.timeline-dot{
+  position:absolute;top:10px;right:-40px;width:24px;height:24px;border-radius:50%;
+  background:var(--grad);border:4px solid #fff;
+  box-shadow:0 0 0 5px rgba(29,78,216,.20),0 0 20px rgba(14,165,233,.5);
+  z-index:2;
+  animation:dotPulse 2s infinite;
+}
+@keyframes dotPulse{
+  0%,100%{box-shadow:0 0 0 5px rgba(29,78,216,.20),0 0 20px rgba(14,165,233,.5)}
+  50%{box-shadow:0 0 0 10px rgba(29,78,216,.10),0 0 30px rgba(14,165,233,.7)}
+}
+body[dir="ltr"] .timeline-dot{right:auto;left:-40px}
+.timeline-content{
+  background:var(--card);border-radius:var(--radius);padding:28px;
+  border:1px solid var(--border);box-shadow:var(--shadow);
+  transition:var(--transition);position:relative;overflow:hidden;
+}
+.timeline-content::before{
+  content:'';position:absolute;top:0;right:0;width:5px;height:100%;
+  background:var(--grad-2);
+}
+.timeline-content:hover{transform:translateX(-10px) scale(1.01);box-shadow:var(--shadow-lg);border-color:var(--sky)}
+body[dir="ltr"] .timeline-content:hover{transform:translateX(10px) scale(1.01)}
+.timeline-date{
+  display:inline-block;padding:6px 18px;border-radius:50px;
+  background:var(--grad-3);color:#fff;font-size:12px;font-weight:800;
+  margin-bottom:14px;box-shadow:0 8px 18px rgba(245,158,11,.30);
+}
+.timeline-content h3{font-size:19px;font-weight:800;margin-bottom:12px;color:var(--blue)}
+.timeline-content p{color:var(--text-muted);font-size:14px;margin-bottom:6px}
+.timeline-link{
+  color:var(--sky);font-weight:800;
+  display:inline-flex;align-items:center;gap:6px;
+  transition:var(--transition);
+}
+.timeline-link:hover{color:var(--blue);gap:12px}
+
+.certs-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:18px;margin-top:40px}
+.cert-card{
+  background:var(--card);border-radius:var(--radius-sm);padding:22px 24px;
+  border:1px solid var(--border);box-shadow:var(--shadow);
+  display:flex;gap:16px;align-items:flex-start;
+  transition:var(--transition);
+  border-inline-start:5px solid var(--blue);
+  position:relative;overflow:hidden;
+}
+.cert-card:nth-child(3n+2){border-inline-start-color:var(--sky)}
+.cert-card:nth-child(3n+3){border-inline-start-color:var(--gold-2)}
+.cert-card::after{
+  content:'';position:absolute;top:50%;right:-20px;width:60px;height:60px;
+  background:radial-gradient(circle,rgba(14,165,233,.15),transparent 70%);
+  border-radius:50%;transform:translateY(-50%);opacity:0;
+  transition:all .5s ease;
+}
+.cert-card:hover::after{right:0;opacity:1}
+.cert-card:hover{transform:translateY(-6px);box-shadow:var(--shadow-lg)}
+.cert-icon{
+  flex-shrink:0;width:44px;height:44px;border-radius:12px;
+  background:var(--grad);color:#fff;
+  display:grid;place-items:center;font-size:20px;
+  box-shadow:0 8px 18px rgba(29,78,216,.30);
+  transition:transform .4s ease;
+}
+.cert-card:hover .cert-icon{transform:rotate(360deg)}
+.cert-card p{font-size:14px;color:var(--text-muted);font-weight:700}
+
+.two-cols{display:grid;grid-template-columns:1fr 1fr;gap:60px;margin-top:20px}
+.lang-item{margin-bottom:28px}
+.lang-head{display:flex;justify-content:space-between;margin-bottom:10px;font-weight:800;font-size:15px}
+.lang-head span:last-child{color:var(--text-muted);font-weight:700;font-size:13px}
+.bar{height:14px;background:#dbeafe;border-radius:50px;overflow:hidden;box-shadow:inset 0 2px 6px rgba(29,78,216,.15)}
+.bar-fill{
+  height:100%;border-radius:50px;
+  background:var(--grad);
+  transition:width 1.4s cubic-bezier(.34,1.56,.64,1);
+  box-shadow:0 0 14px rgba(14,165,233,.55);
+  position:relative;
+}
+.bar-fill::after{
+  content:'';position:absolute;inset:0;
+  background:linear-gradient(90deg,transparent,rgba(255,255,255,.5),transparent);
+  animation:barShine 2s infinite;
+}
+@keyframes barShine{from{transform:translateX(-100%)}to{transform:translateX(100%)}}
+.interests-list{list-style:none}
+.interests-list li{
+  padding:14px 0;font-size:15px;color:var(--text-muted);
+  display:flex;align-items:center;gap:12px;
+  border-bottom:1px dashed var(--border);
+  transition:var(--transition);cursor:default;
+}
+.interests-list li:hover{color:var(--blue);padding-inline-start:10px;border-bottom-color:var(--sky)}
+.interests-list li:last-child{border-bottom:none}
+.interests-list li::before{
+  content:'◆';font-size:14px;color:var(--sky);
+  transition:transform .3s ease;
+}
+.interests-list li:hover::before{transform:rotate(45deg) scale(1.3)}
+
+.contact-grid{display:grid;grid-template-columns:1.3fr 1fr;gap:34px;margin-top:40px;align-items:start}
+.contact-info{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.contact-item{
+  background:var(--card);border-radius:var(--radius-sm);padding:22px;
+  border:1px solid var(--border);box-shadow:var(--shadow);
+  display:flex;gap:16px;align-items:center;
+  transition:var(--transition);text-decoration:none;color:inherit;
+  position:relative;overflow:hidden;cursor:pointer;
+}
+.contact-item::before{
+  content:'';position:absolute;inset:0;
+  background:var(--grad);opacity:0;transition:opacity .4s ease;
+  z-index:0;
+}
+.contact-item>*{position:relative;z-index:1}
+.contact-item:hover::before{opacity:1}
+.contact-item:hover{transform:translateY(-8px) scale(1.02);box-shadow:var(--shadow-lg);color:#fff}
+.contact-item:hover h4,.contact-item:hover p{color:#fff}
+.contact-icon{
+  flex-shrink:0;width:54px;height:54px;border-radius:16px;
+  background:var(--grad);color:#fff;
+  display:grid;place-items:center;font-size:24px;
+  box-shadow:0 10px 22px rgba(29,78,216,.35);
+  transition:var(--transition);
+}
+.contact-item:nth-child(2) .contact-icon{background:linear-gradient(135deg,#25d366,#128c7e)}
+.contact-item:nth-child(3) .contact-icon{background:linear-gradient(135deg,#f58529,#dd2a7b,#8134af)}
+.contact-item:nth-child(4) .contact-icon{background:linear-gradient(135deg,#ea4335,#fbbc05)}
+.contact-item:hover .contact-icon{transform:rotate(-10deg) scale(1.1);background:#fff;color:var(--blue)}
+.contact-item h4{font-size:14px;font-weight:800;margin-bottom:4px;color:var(--blue);transition:color .3s}
+.contact-item p{color:var(--text-muted);font-size:14px;font-weight:700;transition:color .3s;direction:ltr;text-align:left}
+body[dir="rtl"] .contact-item .contact-text{direction:rtl}
+.contact-item .arrow{
+  position:absolute;bottom:14px;left:16px;font-size:18px;
+  opacity:0;transition:all .3s ease;transform:translateX(-10px);
+}
+.contact-item:hover .arrow{opacity:1;transform:translateX(0)}
+.qr-box{
+  background:var(--card);border-radius:var(--radius);padding:34px 28px;
+  border:1px solid var(--border);box-shadow:var(--shadow-lg);
+  text-align:center;position:relative;overflow:hidden;
+}
+.qr-box::before{
+  content:'';position:absolute;top:0;left:0;right:0;height:6px;background:var(--grad);
+}
+.qr-box h3{font-size:18px;font-weight:800;margin-bottom:20px;color:var(--blue)}
+.qr-placeholder{
+  display:inline-block;padding:18px;background:#fff;
+  border-radius:var(--radius-sm);border:2px dashed var(--sky);
+  margin-bottom:16px;min-width:220px;min-height:220px;
+  box-shadow:0 12px 28px rgba(14,165,233,.18);
+  transition:var(--transition);
+}
+.qr-placeholder:hover{transform:scale(1.05) rotate(2deg);border-color:var(--blue)}
+#qrcode{display:inline-block}
+.qr-box>p{color:var(--text-muted);font-size:13px;font-weight:700}
+
+.float-wa{
+  position:fixed;bottom:24px;left:24px;z-index:999;
+  width:60px;height:60px;border-radius:50%;
+  background:linear-gradient(135deg,#25d366,#128c7e);
+  color:#fff;display:grid;place-items:center;font-size:30px;
+  box-shadow:0 14px 34px rgba(37,211,102,.5);
+  text-decoration:none;cursor:pointer;
+  transition:var(--transition);
+  animation:waPulse 2s infinite;
+}
+@keyframes waPulse{
+  0%,100%{box-shadow:0 14px 34px rgba(37,211,102,.5),0 0 0 0 rgba(37,211,102,.6)}
+  50%{box-shadow:0 14px 34px rgba(37,211,102,.5),0 0 0 18px rgba(37,211,102,0)}
+}
+.float-wa:hover{transform:scale(1.15) rotate(-10deg)}
+body[dir="ltr"] .float-wa{left:auto;right:24px}
+
+.footer{
+  background:linear-gradient(135deg,#0a1a3f 0%,#1e3a8a 100%);
+  color:#dbeafe;padding:40px 0;text-align:center;
+  position:relative;overflow:hidden;
+}
+.logo-mark img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  border-radius:14px;
+  display:block;
+}
+
+.footer::before{
+  content:'';position:absolute;top:0;left:0;right:0;height:5px;background:var(--grad);
+}
+.footer::after{
+  content:'';position:absolute;bottom:-100px;left:50%;transform:translateX(-50%);
+  width:400px;height:200px;border-radius:50%;
+  background:radial-gradient(circle,rgba(14,165,233,.20),transparent 70%);
+  animation:pulse 4s ease-in-out infinite;
+}
+.footer-content p{font-size:14px;position:relative;z-index:1}
+.footer-sub{margin-top:10px;font-size:13px;color:#93c5fd;position:relative;z-index:1}
+
+@media (max-width:900px){
+.hero-content{grid-template-columns:1fr;gap:40px}
+.hero-card{max-width:460px;margin:0 auto}
+.two-cols{grid-template-columns:1fr;gap:40px}
+.contact-grid{grid-template-columns:1fr}
+.contact-info{grid-template-columns:1fr}
+.nav-links{
+  position:fixed;top:74px;right:0;left:0;background:#fff;
+  flex-direction:column;padding:24px;gap:8px;
+  border-bottom:1px solid var(--border);
+  transform:translateY(-150%);transition:transform .4s cubic-bezier(.34,1.56,.64,1);
+  box-shadow:var(--shadow-lg);
+}
+.nav-links a{padding:12px 20px;width:100%;text-align:center}
+.nav-links.open{transform:translateY(0)}
+.menu-btn{display:block}
+}
+@media (max-width:600px){
+.hero{padding:140px 18px 70px}
+.hero-stats{gap:10px}
+.stat{padding:12px 16px;min-width:88px}
+.stat-num{font-size:22px}
+.edu-card{flex-direction:column;padding:26px}
+.section{padding:70px 0}
+.timeline{padding-inline-start:26px}
+.timeline::before{right:7px}
+body[dir="ltr"] .timeline::before{left:7px}
+.timeline-dot{right:-26px;width:20px;height:20px}
+body[dir="ltr"] .timeline-dot{left:-26px}
+.logo-text{display:none}
+.float-wa{width:54px;height:54px;font-size:26px;bottom:18px;left:18px}
+body[dir="ltr"] .float-wa{left:auto;right:18px}
+}
+</style>
+</head>
+<body>
+
+<div class="progress-bar" id="progressBar"></div>
+
+<header class="navbar" id="navbar">
+  <div class="nav-container">
+<a href="home" class="logo">
+  <span class="logo-mark">
+    <img src="profile.jpg" alt="عبد الرحمن بني عيسى">
+  </span>
+  <span class="logo-text" data-ar="عبد الرحمن بني عيسى" data-en="Abdulrahman Bani Issa">عبد الرحمن بني عيسى</span>
+</a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#about" data-ar="نبذة" data-en="About">نبذة</a>
+      <a href="#education" data-ar="التعليم" data-en="Education">التعليم</a>
+      <a href="#skills" data-ar="المهارات" data-en="Skills">المهارات</a>
+      <a href="#projects" data-ar="المشاريع" data-en="Projects">المشاريع</a>
+      <a href="#experience" data-ar="الخبرة" data-en="Experience">الخبرة</a>
+      <a href="#courses" data-ar="الدورات" data-en="Courses">الدورات</a>
+      <a href="#contact" data-ar="تواصل" data-en="Contact">تواصل</a>
+    </nav>
+    <div class="nav-actions">
+      <button id="langBtn" class="lang-btn"><span class="lang-icon">🌐</span><span id="langLabel">English</span></button>
+      <button id="menuBtn" class="menu-btn">☰</button>
+    </div>
+  </div>
+</header>
+
+<section class="hero" id="home">
+  <div class="hero-shapes">
+    <div class="shape s1"></div>
+    <div class="shape s2"></div>
+    <div class="shape s3"></div>
+  </div>
+  <div class="hero-content">
+    <div class="hero-text">
+      <p class="hero-greet" data-ar="بسم الله الرحمن الرحيم" data-en="In the name of Allah, the Most Gracious, the Most Merciful">بسم الله الرحمن الرحيم</p>
+      <h1 class="hero-name" data-ar="عبد الرحمن محمود محمد بني عيسى" data-en="Abdulrahman Mahmoud Mohammad Bani Issa">عبد الرحمن محمود محمد بني عيسى</h1>
+      <h2 class="hero-title" data-ar="طالب تكنولوجيا معلومات | مطوّر تطبيقات ومواقع" data-en="IT Student | Apps & Web Developer">طالب تكنولوجيا معلومات | مطوّر تطبيقات ومواقع</h2>
+      <p class="hero-desc" data-ar="أسعى لبناء شركة تكنولوجيا خاصة بي، وأهتم ببرمجة الأجهزة والأنظمة والروبوتات وتطويرها." data-en="Aiming to build my own technology company, passionate about programming devices, systems, and robotics.">أسعى لبناء شركة تكنولوجيا خاصة بي، وأهتم ببرمجة الأجهزة والأنظمة والروبوتات وتطويرها.</p>
+      <div class="hero-buttons">
+        <a href="#projects" class="btn btn-primary" data-ar="استعرض مشاريعي" data-en="View My Projects">استعرض مشاريعي</a>
+        <a href="#contact" class="btn btn-outline" data-ar="تواصل معي" data-en="Contact Me">تواصل معي</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><span class="stat-num">17</span><span class="stat-label" data-ar="سنة" data-en="Years">سنة</span></div>
+        <div class="stat"><span class="stat-num">+10</span><span class="stat-label" data-ar="مهارة تقنية" data-en="Tech Skills">مهارة تقنية</span></div>
+        <div class="stat"><span class="stat-num">+3</span><span class="stat-label" data-ar="مشاريع" data-en="Projects">مشاريع</span></div>
+      </div>
+    </div>
+    <div class="hero-card">
+      <div class="avatar">
+        <img src="profile.jpg" alt="عبد الرحمن بني عيسى">
+      </div>
+      <h3 data-ar="عبد الرحمن بني عيسى" data-en="Abdulrahman Bani Issa">عبد الرحمن بني عيسى</h3>
+      <p data-ar="الأردن 🇯🇴" data-en="Jordan 🇯🇴">الأردن 🇯🇴</p>
+      <ul class="quick-info">
+        <li><span class="qi-label" data-ar="العمر" data-en="Age">العمر</span><span class="qi-value" data-ar="17 عام" data-en="17 Years">17 عام</span></li>
+        <li><span class="qi-label" data-ar="الجنسية" data-en="Nationality">الجنسية</span><span class="qi-value" data-ar="أردني" data-en="Jordanian">أردني</span></li>
+        <li><span class="qi-label" data-ar="التخصص" data-en="Major">التخصص</span><span class="qi-value" data-ar="تكنولوجيا المعلومات" data-en="Information Technology">تكنولوجيا المعلومات</span></li>
+        <li><span class="qi-label" data-ar="المستوى" data-en="Level">المستوى</span><span class="qi-value" data-ar="المستوى الثالث" data-en="Level 3">المستوى الثالث</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="about">
+  <div class="container">
+    <h2 class="section-title" data-ar="الملف الشخصي المهني" data-en="Professional Profile">الملف الشخصي المهني</h2>
+    <div class="about-grid">
+      <div class="about-card">
+        <div class="about-icon">🎓</div>
+        <h3 data-ar="طالب علم" data-en="Student">طالب علم</h3>
+        <p data-ar="أدرس تخصص تكنولوجيا المعلومات ضمن المسار التعليمي المهني والتقني في الأردن." data-en="Studying Information Technology within the vocational and technical education track in Jordan.">أدرس تخصص تكنولوجيا المعلومات ضمن المسار التعليمي المهني والتقني في الأردن.</p>
+      </div>
+      <div class="about-card">
+        <div class="about-icon">💻</div>
+        <h3 data-ar="مجالات الاهتمام" data-en="Interests">مجالات الاهتمام</h3>
+        <p data-ar="برمجة الأجهزة والأنظمة والروبوتات وتطويرها، وتطوير البرامج والمواقع والتطبيقات." data-en="Programming and developing devices, systems, and robots, plus software, web, and app development.">برمجة الأجهزة والأنظمة والروبوتات وتطويرها، وتطوير البرامج والمواقع والتطبيقات.</p>
+      </div>
+      <div class="about-card">
+        <div class="about-icon">🚀</div>
+        <h3 data-ar="الهدف" data-en="Goal">الهدف</h3>
+        <p data-ar="إنشاء شركة خاصة بي متخصصة في مجال التكنولوجيا." data-en="Establishing my own company specialized in technology.">إنشاء شركة خاصة بي متخصصة في مجال التكنولوجيا.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt" id="education">
+  <div class="container">
+    <h2 class="section-title" data-ar="التعليم" data-en="Education">التعليم</h2>
+    <div class="edu-card">
+      <div class="edu-icon">🏫</div>
+      <div class="edu-info">
+        <h3 data-ar="مدرسة الإمام مالك الثانوية للبنين" data-en="Imam Malik Secondary School for Boys">مدرسة الإمام مالك الثانوية للبنين</h3>
+        <p class="edu-major" data-ar="مسار التعليم المهني والتقني — تكنولوجيا المعلومات" data-en="Vocational & Technical Education Track — Information Technology">مسار التعليم المهني والتقني — تكنولوجيا المعلومات</p>
+        <div class="edu-badges">
+          <span class="badge" data-ar="المستوى الثاني ✅" data-en="Level 2 ✅">المستوى الثاني ✅</span>
+          <span class="badge badge-current" data-ar="المستوى الثالث (حالياً)" data-en="Level 3 (Current)">المستوى الثالث (حالياً)</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="skills">
+  <div class="container">
+    <h2 class="section-title" data-ar="المهارات" data-en="Skills">المهارات</h2>
+    <div class="skills-grid">
+      <div class="skill-box">
+        <h3 data-ar="المهارات التقنية" data-en="Technical Skills">المهارات التقنية</h3>
+        <ul class="skill-list">
+          <li data-ar="البرمجة" data-en="Programming">البرمجة</li>
+          <li data-ar="جمع البيانات ومعالجتها" data-en="Data Collection & Processing">جمع البيانات ومعالجتها</li>
+          <li data-ar="تصميم الرسومات" data-en="Graphic Design">تصميم الرسومات</li>
+          <li data-ar="تطوير الألعاب الخفيفة" data-en="Light Game Development">تطوير الألعاب الخفيفة</li>
+          <li data-ar="تطوير التطبيقات" data-en="App Development">تطوير التطبيقات</li>
+          <li data-ar="إنشاء قواعد البيانات" data-en="Database Creation">إنشاء قواعد البيانات</li>
+          <li data-ar="تطوير المواقع الإلكترونية" data-en="Web Development">تطوير المواقع الإلكترونية</li>
+        </ul>
+      </div>
+      <div class="skill-box">
+        <h3 data-ar="المهارات الشخصية" data-en="Soft Skills">المهارات الشخصية</h3>
+        <ul class="skill-list">
+          <li data-ar="مهارة الاستماع والتحدث" data-en="Listening & Speaking">مهارة الاستماع والتحدث</li>
+          <li data-ar="مهارة حل المشكلات" data-en="Problem Solving">مهارة حل المشكلات</li>
+          <li data-ar="مهارة العمل تحت الضغط" data-en="Working Under Pressure">مهارة العمل تحت الضغط</li>
+          <li data-ar="مهارة إدارة الوقت" data-en="Time Management">مهارة إدارة الوقت</li>
+          <li data-ar="مهارة السرعة في التعلم والتدريب" data-en="Fast Learning & Training">مهارة السرعة في التعلم والتدريب</li>
+          <li data-ar="مهارة التنافس والتحدي" data-en="Competition & Challenge">مهارة التنافس والتحدي</li>
+        </ul>
+      </div>
+      <div class="skill-box">
+        <h3 data-ar="مهارات قيد التعلم" data-en="Skills In Progress">مهارات قيد التعلم</h3>
+        <ul class="skill-list">
+          <li data-ar="مهارة التجارة" data-en="Business Skills">مهارة التجارة</li>
+          <li data-ar="تطوير برامج الذكاء الاصطناعي" data-en="AI Software Development">تطوير برامج الذكاء الاصطناعي</li>
+          <li data-ar="إصلاح الأجهزة" data-en="Device Repair">إصلاح الأجهزة</li>
+          <li data-ar="العمل ضمن فريق" data-en="Teamwork">العمل ضمن فريق</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt" id="projects">
+  <div class="container">
+    <h2 class="section-title" data-ar="المشاريع" data-en="Projects">المشاريع</h2>
+    <p class="section-note" data-ar="يمكنك تنزيل ملفات كل مشروع مباشرة من الأزرار أدناه." data-en="You can download each project's files directly from the buttons below.">يمكنك تنزيل ملفات كل مشروع مباشرة من الأزرار أدناه.</p>
+    <div class="projects-grid">
+
+      <article class="project-card">
+        <div class="project-icon">🦸</div>
+        <span class="project-tag" data-ar="لعبة" data-en="Game">لعبة</span>
+        <h3 data-ar="لعبة سوبر هيرو" data-en="Super Hero Game">لعبة سوبر هيرو</h3>
+        <p data-ar="لعبة تفاعلية بأسلوب السوبر هيرو مع رسومات ومؤثرات." data-en="An interactive Super Hero style game with graphics and effects.">لعبة تفاعلية بأسلوب السوبر هيرو مع رسومات ومؤثرات.</p>
+        <div class="project-meta">
+          <h4 data-ar="دوري في المشروع" data-en="My Role">دوري في المشروع</h4>
+          <p data-ar="تطوير اللعبة بالكامل — التصميم والبرمجة." data-en="Full game development — design and programming.">تطوير اللعبة بالكامل — التصميم والبرمجة.</p>
+        </div>
+        <div class="tech-tags"><span>Game Dev</span><span>Design</span><span>Programming</span></div>
+        <div class="project-actions">
+          <button class="download-btn"
+                  data-file="https://drive.google.com/uc?export=download&id=1W0nIMOLEhSGZsclxrasY4tvsVm7l5sfX"
+                  data-filename="superhero-game.zip">
+            <span class="dl-icon">⬇</span>
+            <span data-ar="تنزيل ملفات المشروع" data-en="Download Project Files">تنزيل ملفات المشروع</span>
+          </button>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-icon">🎵</div>
+        <span class="project-tag" data-ar="تطبيق أندرويد" data-en="Android App">تطبيق أندرويد</span>
+        <h3 data-ar="تطبيق متجر موسيقاتي" data-en="Musiqati Store App">تطبيق متجر موسيقاتي</h3>
+        <p data-ar="تطبيق يختص بعرض المنتجات من متجر موسيقاتي مع إمكانية الشراء." data-en="An app that displays Musiqati store products with purchasing capability.">تطبيق يختص بعرض المنتجات من متجر موسيقاتي مع إمكانية الشراء.</p>
+        <div class="project-meta">
+          <h4 data-ar="دوري في المشروع" data-en="My Role">دوري في المشروع</h4>
+          <p data-ar="التطبيق بالكامل — الواجهة الخلفية والأمامية وقواعد البيانات." data-en="The entire app — front-end, back-end, and databases.">التطبيق بالكامل — الواجهة الخلفية والأمامية وقواعد البيانات.</p>
+        </div>
+        <div class="tech-tags"><span>Kotlin</span><span>Android Studio</span><span>Firebase</span></div>
+        <div class="project-actions">
+          <button class="download-btn"
+                  data-file="https://drive.google.com/uc?export=download&id=1r8AvcLYqMQNOAbWw_8-eqdDz-P5O1vqS"
+                  data-filename="musiqati-app.zip">
+            <span class="dl-icon">⬇</span>
+            <span data-ar="تنزيل ملفات المشروع" data-en="Download Project Files">تنزيل ملفات المشروع</span>
+          </button>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-icon">🌐</div>
+        <span class="project-tag" data-ar="موقع إلكتروني" data-en="Website">موقع إلكتروني</span>
+        <h3 data-ar="موقع متجر موسيقاتي" data-en="Musiqati Store Website">موقع متجر موسيقاتي</h3>
+        <p data-ar="موقع يختص بعرض المنتجات من متجر موسيقاتي مع إمكانية الشراء." data-en="A website displaying Musiqati store products with purchasing capability.">موقع يختص بعرض المنتجات من متجر موسيقاتي مع إمكانية الشراء.</p>
+        <div class="project-meta">
+          <h4 data-ar="دوري في المشروع" data-en="My Role">دوري في المشروع</h4>
+          <p data-ar="الموقع بالكامل — الواجهة الخلفية والأمامية وقواعد البيانات." data-en="The entire website — front-end, back-end, and databases.">الموقع بالكامل — الواجهة الخلفية والأمامية وقواعد البيانات.</p>
+        </div>
+        <div class="tech-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>VS Code</span><span>Firebase</span><span>GitHub</span></div>
+        <div class="project-actions">
+          <button class="download-btn"
+                  data-file="https://drive.google.com/uc?export=download&id=1Owp2vz4pxw2FlSqsZA6by3moJLUh1ycI"
+                  data-filename="musiqati-website.zip">
+            <span class="dl-icon">⬇</span>
+            <span data-ar="تنزيل ملفات المشروع" data-en="Download Project Files">تنزيل ملفات المشروع</span>
+          </button>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<section class="section" id="experience">
+  <div class="container">
+    <h2 class="section-title" data-ar="الخبرة" data-en="Experience">الخبرة</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <span class="timeline-date" data-ar="يوليو 2026 — حتى الآن" data-en="July 2026 — Present">يوليو 2026 — حتى الآن</span>
+          <h3 data-ar="تطوير المواقع الإلكترونية" data-en="Web Development">تطوير المواقع الإلكترونية</h3>
+          <p data-ar="الدور: المسؤول عن تصميم الواجهة الأمامية للموقع." data-en="Role: Responsible for designing the website's front-end.">الدور: المسؤول عن تصميم الواجهة الأمامية للموقع.</p>
+          <p data-ar="مكان العمل: عمل حر (Online) عبر حساب على إنستغرام للتسويق والإعلان." data-en="Workplace: Freelance (Online) via an Instagram account for marketing and advertising.">مكان العمل: عمل حر (Online) عبر حساب على إنستغرام للتسويق والإعلان.</p>
+          <p class="timeline-link" data-ar="رابط الصفحة: DESIGN_ONLINE_TESH" data-en="Page link: DESIGN_ONLINE_TESH">رابط الصفحة: DESIGN_ONLINE_TESH</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <span class="timeline-date" data-ar="يوليو 2026 — حتى الآن" data-en="July 2026 — Present">يوليو 2026 — حتى الآن</span>
+          <h3 data-ar="تطوير التطبيقات" data-en="App Development">تطوير التطبيقات</h3>
+          <p data-ar="الدور: المسؤول عن تصميم التطبيق بالكامل." data-en="Role: Responsible for designing the entire application.">الدور: المسؤول عن تصميم التطبيق بالكامل.</p>
+          <p data-ar="مكان العمل: عمل حر (Online) عبر حساب على إنستغرام للتسويق والإعلان." data-en="Workplace: Freelance (Online) via an Instagram account for marketing and advertising.">مكان العمل: عمل حر (Online) عبر حساب على إنستغرام للتسويق والإعلان.</p>
+          <p class="timeline-link" data-ar="رابط الصفحة: DESIGN_ONLINE_TESH" data-en="Page link: DESIGN_ONLINE_TESH">رابط الصفحة: DESIGN_ONLINE_TESH</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <span class="timeline-date" data-ar="5 أكتوبر 2026 — حتى الآن" data-en="October 5, 2026 — Present">5 أكتوبر 2026 — حتى الآن</span>
+          <h3 data-ar="تجارة الإلكترونيات والأجهزة الصغيرة" data-en="Electronics & Gadgets Trading">تجارة الإلكترونيات والأجهزة الصغيرة</h3>
+          <p data-ar="الدور: البحث عن منتج وبيعه." data-en="Role: Searching for products and selling them.">الدور: البحث عن منتج وبيعه.</p>
+          <p data-ar="مكان العمل: عمل حر ضمن العثور على زبائن في الأماكن العامة." data-en="Workplace: Freelance, finding customers in public places.">مكان العمل: عمل حر ضمن العثور على زبائن في الأماكن العامة.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt" id="courses">
+  <div class="container">
+    <h2 class="section-title" data-ar="الدورات والشهادات" data-en="Courses & Certificates">الدورات والشهادات</h2>
+    <div class="certs-grid">
+      <div class="cert-card"><span class="cert-icon">🏅</span><p data-ar="شهادة المستوى الثاني من مسار التعليم المهني من شركة PERSON" data-en="Level 2 Certificate in the Vocational Education Track from PERSON">شهادة المستوى الثاني من مسار التعليم المهني من شركة PERSON</p></div>
+      <div class="cert-card"><span class="cert-icon">🏅</span><p data-ar="إدارة الأنظمة في المؤسسة (ضمن البرنامج التعليمي)" data-en="Enterprise Systems Management (within the educational program)">إدارة الأنظمة في المؤسسة (ضمن البرنامج التعليمي)</p></div>
+      <div class="cert-card"><span class="cert-icon">🏅</span><p data-ar="تطوير التطبيقات (ضمن البرنامج التعليمي)" data-en="App Development (within the educational program)">تطوير التطبيقات (ضمن البرنامج التعليمي)</p></div>
+      <div class="cert-card"><span class="cert-icon">🏅</span><p data-ar="تطوير المواقع (ضمن البرنامج التعليمي)" data-en="Web Development (within the educational program)">تطوير المواقع (ضمن البرنامج التعليمي)</p></div>
+      <div class="cert-card"><span class="cert-icon">🏅</span><p data-ar="تطوير الألعاب (ضمن البرنامج التعليمي)" data-en="Game Development (within the educational program)">تطوير الألعاب (ضمن البرنامج التعليمي)</p></div>
+      <div class="cert-card"><span class="cert-icon">🏅</span><p data-ar="أساسيات الشبكات (ضمن البرنامج التعليمي)" data-en="Networking Basics (within the educational program)">أساسيات الشبكات (ضمن البرنامج التعليمي)</p></div>
+      <div class="cert-card"><span class="cert-icon">🏅</span><p data-ar="أساسيات تصميم الرسومات (ضمن البرنامج التعليمي)" data-en="Graphic Design Basics (within the educational program)">أساسيات تصميم الرسومات (ضمن البرنامج التعليمي)</p></div>
+      <div class="cert-card"><span class="cert-icon">🏅</span><p data-ar="أساسيات البرمجة (ضمن البرنامج التعليمي)" data-en="Programming Basics (within the educational program)">أساسيات البرمجة (ضمن البرنامج التعليمي)</p></div>
+      <div class="cert-card"><span class="cert-icon">🏅</span><p data-ar="جمع البيانات ومعالجتها (ضمن البرنامج التعليمي)" data-en="Data Collection & Processing (within the educational program)">جمع البيانات ومعالجتها (ضمن البرنامج التعليمي)</p></div>
+      <div class="cert-card"><span class="cert-icon">🏅</span><p data-ar="استراتيجيات الذكاء الاصطناعي والأمن السيبراني (شركة طه البلاسمه)" data-en="AI Strategies & Cybersecurity (Taha Al-Blasma Company)">استراتيجيات الذكاء الاصطناعي والأمن السيبراني (شركة طه البلاسمه)</p></div>
+      <div class="cert-card"><span class="cert-icon">🏅</span><p data-ar="دورة التجويد للمستوى المبتدئ (مركز المجد القرآني)" data-en="Tajweed Course — Beginner Level (Al-Majd Quran Center)">دورة التجويد للمستوى المبتدئ (مركز المجد القرآني)</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="languages">
+  <div class="container">
+    <div class="two-cols">
+      <div>
+        <h2 class="section-title" data-ar="اللغات" data-en="Languages">اللغات</h2>
+        <div class="lang-item">
+          <div class="lang-head"><span data-ar="العربية" data-en="Arabic">العربية</span><span data-ar="اللغة الأم" data-en="Native">اللغة الأم</span></div>
+          <div class="bar"><div class="bar-fill" style="width:100%"></div></div>
+        </div>
+        <div class="lang-item">
+          <div class="lang-head"><span data-ar="الإنجليزية" data-en="English">الإنجليزية</span><span data-ar="متوسط" data-en="Intermediate">متوسط</span></div>
+          <div class="bar"><div class="bar-fill" style="width:60%"></div></div>
+        </div>
+      </div>
+      <div>
+        <h2 class="section-title" data-ar="الاهتمامات" data-en="Interests">الاهتمامات</h2>
+        <ul class="interests-list">
+          <li data-ar="تصميم الأنظمة والروبوتات" data-en="Designing Systems & Robots">تصميم الأنظمة والروبوتات</li>
+          <li data-ar="إصلاح الأجهزة" data-en="Device Repair">إصلاح الأجهزة</li>
+          <li data-ar="الرياضة" data-en="Sports">الرياضة</li>
+          <li data-ar="الرسم" data-en="Drawing">الرسم</li>
+          <li data-ar="الأعمال اليدوية (تصميم مجسمات بالكرتون)" data-en="Handmade Crafts (Cardboard Models)">الأعمال اليدوية (تصميم مجسمات بالكرتون)</li>
+          <li data-ar="تطوير البرامج" data-en="Software Development">تطوير البرامج</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt" id="contact">
+  <div class="container">
+    <h2 class="section-title" data-ar="تواصل معي" data-en="Contact Me">تواصل معي</h2>
+    <p class="section-note" data-ar="اضغط على أي بطاقة للتواصل مباشرة" data-en="Click any card to contact directly">اضغط على أي بطاقة للتواصل مباشرة</p>
+    <div class="contact-grid">
+      <div class="contact-info">
+
+        <a href="tel:0791749386" class="contact-item">
+          <span class="contact-icon">📞</span>
+          <div class="contact-text">
+            <h4 data-ar="هاتف" data-en="Phone">هاتف</h4>
+            <p>0791749386</p>
+          </div>
+          <span class="arrow">←</span>
+        </a>
+
+        <a href="https://wa.me/962790642739" target="_blank" rel="noopener" class="contact-item">
+          <span class="contact-icon">💬</span>
+          <div class="contact-text">
+            <h4 data-ar="واتساب" data-en="WhatsApp">واتساب</h4>
+            <p>0790642739</p>
+          </div>
+          <span class="arrow">←</span>
+        </a>
+
+        <a href="https://instagram.com/aboodbaniissa2010" target="_blank" rel="noopener" class="contact-item">
+          <span class="contact-icon">📷</span>
+          <div class="contact-text">
+            <h4 data-ar="إنستغرام" data-en="Instagram">إنستغرام</h4>
+            <p>aboodbaniissa2010</p>
+          </div>
+          <span class="arrow">←</span>
+        </a>
+
+        <a href="mailto:aboodalanfsy@gmail.com" class="contact-item">
+          <span class="contact-icon">✉️</span>
+          <div class="contact-text">
+            <h4 data-ar="البريد الإلكتروني" data-en="Email">البريد الإلكتروني</h4>
+            <p>aboodalanfsy@gmail.com</p>
+          </div>
+          <span class="arrow">←</span>
+        </a>
+
+      </div>
+      <div class="qr-box">
+        <h3 data-ar="رمز QR للموقع" data-en="Website QR Code">رمز QR للموقع</h3>
+        <div class="qr-placeholder">
+          <div id="qrcode"></div>
+        </div>
+        <p data-ar="امسح الرمز لزيارة الموقع" data-en="Scan the code to visit the website">امسح الرمز لزيارة الموقع</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<a href="https://wa.me/962790642739" target="_blank" rel="noopener" class="float-wa" aria-label="WhatsApp">💬</a>
+
+<footer class="footer">
+  <div class="container footer-content">
+    <p data-ar="© 2026 عبد الرحمن محمود محمد بني عيسى — جميع الحقوق محفوظة." data-en="© 2026 Abdulrahman Mahmoud Mohammad Bani Issa — All rights reserved.">© 2026 عبد الرحمن محمود محمد بني عيسى — جميع الحقوق محفوظة.</p>
+    <p class="footer-sub" data-ar="صُنع بشغف 💙" data-en="Made with passion 💙">صُنع بشغف 💙</p>
+  </div>
+</footer>
+
+<script>
+var QR_LINK = "https://example.com";
+var WHATSAPP_NUMBER = "962790642739";
+
+(function(){
+  var qrContainer = document.getElementById('qrcode');
+  if (typeof QRCode !== 'undefined') {
+    new QRCode(qrContainer, {
+      text: QR_LINK, width: 200, height: 200,
+      colorDark: "#1d4ed8", colorLight: "#ffffff",
+      correctLevel: QRCode.CorrectLevel.H
+    });
+  } else {
+    qrContainer.innerHTML = '<p style="color:#dc2626;font-size:13px;padding:20px">تعذّر تحميل مكتبة QR.</p>';
+  }
+})();
+
+var langBtn = document.getElementById('langBtn');
+var langLabel = document.getElementById('langLabel');
+var body = document.body;
+var currentLang = 'ar';
+
+langBtn.addEventListener('click', function() {
+  currentLang = (currentLang === 'ar') ? 'en' : 'ar';
+  body.setAttribute('dir', currentLang === 'ar' ? 'rtl' : 'ltr');
+  document.documentElement.setAttribute('lang', currentLang);
+  document.querySelectorAll('[data-ar][data-en]').forEach(function(el){
+    el.textContent = el.getAttribute('data-' + currentLang);
+  });
+  langLabel.textContent = (currentLang === 'ar') ? 'English' : 'العربية';
+});
+
+var menuBtn = document.getElementById('menuBtn');
+var navLinks = document.getElementById('navLinks');
+menuBtn.addEventListener('click', function() { navLinks.classList.toggle('open'); });
+navLinks.querySelectorAll('a').forEach(function(link){
+  link.addEventListener('click', function(){ navLinks.classList.remove('open'); });
+});
+
+var progressBar = document.getElementById('progressBar');
+var navbar = document.getElementById('navbar');
+window.addEventListener('scroll', function(){
+  var h = document.documentElement;
+  var scrolled = (h.scrollTop / (h.scrollHeight - h.clientHeight)) * 100;
+  progressBar.style.width = scrolled + '%';
+  if (window.scrollY > 30) navbar.classList.add('scrolled');
+  else navbar.classList.remove('scrolled');
+});
+
+document.querySelectorAll('.download-btn').forEach(function(btn){
+  btn.addEventListener('click', function(){
+    var filePath = btn.getAttribute('data-file');
+    var fileName = btn.getAttribute('data-filename') || 'project.zip';
+    downloadFile(filePath, fileName);
+  });
+});
+
+function downloadFile(url, fileName){
+  if (/^https?:\/\//i.test(url)) {
+    var a = document.createElement('a');
+    a.href = url; a.download = fileName; a.target = '_blank';
+    document.body.appendChild(a); a.click(); document.body.removeChild(a);
+    return;
+  }
+  fetch(url).then(function(res){
+    if (!res.ok) throw new Error('not found');
+    return res.blob();
+  }).then(function(blob){
+    var blobUrl = URL.createObjectURL(blob);
+    var a = document.createElement('a');
+    a.href = blobUrl; a.download = fileName;
+    document.body.appendChild(a); a.click(); document.body.removeChild(a);
+    URL.revokeObjectURL(blobUrl);
+  }).catch(function(){
+    alert(currentLang === 'ar'
+      ? 'تعذّر تنزيل الملف. تأكد من وجود: ' + url
+      : 'Could not download. Check: ' + url);
+  });
+}
+
+var observer = new IntersectionObserver(function(entries){
+  entries.forEach(function(entry){
+    if (entry.isIntersecting) {
+      entry.target.style.opacity = '1';
+      entry.target.style.transform = 'translateY(0)';
+      observer.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.12 });
+
+document.querySelectorAll('.about-card, .skill-box, .project-card, .cert-card, .timeline-content, .edu-card, .contact-item, .stat').forEach(function(el, i){
+  el.style.opacity = '0';
+  el.style.transform = 'translateY(40px)';
+  el.style.transition = 'opacity .8s ease ' + (i * 0.05) + 's, transform .8s cubic-bezier(.34,1.56,.64,1) ' + (i * 0.05) + 's';
+  observer.observe(el);
+});
+</script>
+
+</body>
+</html>
